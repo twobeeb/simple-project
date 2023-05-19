@@ -17,7 +17,7 @@ metadata:
   name: abc.myTopic2
 spec:
   replicationFactor: 1
-  partitions: 300
+  partitions: 30
   configs:
     min.insync.replicas: 1
     cleanup.policy: delete
