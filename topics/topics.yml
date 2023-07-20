@@ -34,3 +34,15 @@ spec:
     min.insync.replicas: 1
     cleanup.policy: delete
     retention.ms: 604800000
+---
+apiVersion: v1
+kind: Topic
+metadata:
+  name: abc.myTopic4
+spec:
+  replicationFactor: 1
+  partitions: 30
+  configs:
+    min.insync.replicas: 1
+    cleanup.policy: delete
+    retention.ms: 604800000
